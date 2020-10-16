@@ -1,6 +1,6 @@
-body, html {
+/* body, html {
     margin: 0 auto;
-}
+} */
 
 body {
     --color1: #ffffff;
@@ -21,6 +21,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -40,6 +41,19 @@ section {
     border: solid 2px var(--color1);
 }
 
+label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+}
+button {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
 /* header {
     display: flex;
     justify-content: flex-end;
