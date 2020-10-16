@@ -19,4 +19,26 @@ h2.textContent = adventure.title;
 
 section.appendChild(h2);
 
-console.log(adventure.choices);
+// console.log(adventure.choices);
+
+const form = document.createElement('form');
+
+section.appendChild(form);
+
+adventure.choices.forEach(choice => {
+    const label = document.createElement('label');
+    const span = document.createElement('span');
+
+    span.textContent = choice.description;
+
+    const radio = document.createElement('input');
+    radio.type = 'radio';
+    radio.value = 'choice.id';
+    radio.name = 'choices';
+
+    label.append(radio, span);
+
+    form.appendChild(label);
+
+});
+
