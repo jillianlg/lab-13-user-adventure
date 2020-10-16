@@ -1,5 +1,4 @@
 import adventures from '../data.js';
-import { getDog } from '../storage-utils.js';
 
 // console.log(adventures);
 
