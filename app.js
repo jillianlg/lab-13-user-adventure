@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
         name: data.get('name'),
         breed: data.get('breed'),
         treats: 0,
-        bd: 0,
+        baddog: 0,
         completed: {}
     });
 
