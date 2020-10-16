@@ -61,7 +61,7 @@ export default [
     },
     {
         id: 'vet',
-        title: 'Annual Vet Vist',
+        title: 'Vet Vist',
         map: {
             top:'31%',
             left: '5%'
