@@ -46,7 +46,7 @@ export default [
             baddog: 0,
             treats: 0
         }, {
-            id: 'sult',
+            id: 'sulk',
             description: 'Sulk and be difficult.',
             results:`This is the worst, but at least you get treats for putting up with this bull.`,
             baddog: 1,

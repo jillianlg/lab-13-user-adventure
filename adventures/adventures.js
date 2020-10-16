@@ -34,7 +34,7 @@ adventure.choices.forEach(choice => {
 
     const radio = document.createElement('input');
     radio.type = 'radio';
-    radio.value = 'choice.id';
+    radio.value = choice.id;
     radio.name = 'choices';
 
     label.append(radio, span);
@@ -50,9 +50,11 @@ button.textContent = 'Start Adventure';
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    const checked = document.querySelectorAll(':checked');
+    const checked = document.querySelector(':checked');
+    console.log(checked);
 
     const selection = checked.value;
+    console.log(selection);
 
     const choice = findById(adventure.choices, selection);
     console.log(choice);
@@ -63,7 +65,13 @@ form.addEventListener('submit', (e) => {
 
     console.log(dog);
 
+    dog.completed[id] = true;
+
     saveDog(dog);
+
+
+
+    // window.location.href = './results/';
 });
 
 form.appendChild(button);
