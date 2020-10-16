@@ -51,27 +51,19 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     
     const checked = document.querySelector(':checked');
-    console.log(checked);
 
     const selection = checked.value;
-    console.log(selection);
 
     const choice = findById(adventure.choices, selection);
-    console.log(choice);
 
     const dog = getDog();
     dog.baddog += choice.baddog;
     dog.treats += choice.treats;
 
-    console.log(dog);
-
     dog.completed[id] = true;
 
     saveDog(dog);
 
-
-
-    // window.location.href = './results/';
 });
 
 form.appendChild(button);
