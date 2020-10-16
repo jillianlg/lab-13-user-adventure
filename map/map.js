@@ -13,7 +13,7 @@ adventures.forEach(adventure => {
     li.appendChild(link);
 
     link.textContent = adventure.title;
-    link.href = `/adventures/?id=${adventure.id}`;
+    link.href = `../adventures/?id=${adventure.id}`;
 
     ul.append(li);
 }); 
