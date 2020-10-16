@@ -11,7 +11,7 @@ adventures.forEach(adventure => {
     li.appendChild(link);
 
     link.textContent = adventure.title;
-    link.href = `/adventure/?id=${adventure.id}`;
+    link.href = `/adventures/?id=${adventure.id}`;
 
     ul.append(li);
 }); 
