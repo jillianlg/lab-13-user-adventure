@@ -52,7 +52,7 @@ img {
     height: 100px;
 }
 
-button {
+/* button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,8 @@ button {
     width: 64px;
     transform: rotate(40deg);
     margin-right: 20px;
-}
+} */
+
 .button {
     display: flex;
     align-items: center;
