@@ -37,15 +37,15 @@ for (let i = 0; i < adventures.length; i++) {
 }
 // const ul = document.querySelector('ul');
 
-// adventures.forEach(adventure => {
-//     const li = document.createElement('li');
-//     const link = document.createElement('a');
+adventures.forEach(adventure => {
+    // const li = document.createElement('li');
+    // const link = document.createElement('a');
 
-//     li.appendChild(link);
+    // li.appendChild(link);
 
-//     link.textContent = adventure.title;
-//     // link.href = `/adventures/?id=${adventure.id}`;
-//     link.href = `./?id=${adventure.id}`;
+    // link.textContent = adventure.title;
+    // link.href = `/adventures/?id=${adventure.id}`;
+    link.href = `./?id=${adventure.id}`;
 
-//     ul.append(li);
-// }); 
+    // ul.append(li);
+}); 

@@ -5,9 +5,13 @@ header {
     background: white;
 }
 header img {
+    height: 40px;
+   
+}
+header .paw {
     transform: rotate(-40deg);
     height: 40px;
-    /* margin-right: 20px; */
+
 }
 
 header h1 {
@@ -36,13 +40,13 @@ h2 {
 
 .adventure {
     position: absolute;
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    color: rgb(202, 82, 132);
+    text-shadow: 1px 1px 1px rgba(54, 54, 54, 0.632);
 }
 
 .adventure.completed {
     color: whitesmoke;
-    font-size: .9em;
+    font-size: .15em;
 }
 
 .adventure.completed:after {

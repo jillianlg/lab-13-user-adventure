@@ -19,7 +19,7 @@ function loadProfile() {
 
     // copy data from object to DOM properties:
     name.textContent = dog.name;
-    avatar.src = '../assets/avatars/' + dog.breed + '.png';
+    avatar.src = '../assets/' + dog.breed + '.png';
     treats.textContent = treats.gold;
 
     // if they're bad, say so in the header
