@@ -8,17 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/map.css">
-    <title>A Doggy Dog Adventure</title>
+    <link rel="stylesheet" href="../styles/adventures.css">
+    <title>A Doggy Dog Adventure Page</title>
 </head>
 
 <body>
     <header>
-        <div></div>
+        <img src="../assets/paw-print.png" alt="paw print">
+        <h1>A Doggy Dog Adventure</h1>
+        <div class="profile">
+            <img id="avatar" src="">
+            <span id="name"></span>
+            <span class="profile-stat-label">Bad Dog:</span>
+            <span id="bad-dog"></span>
+            <span class="profile-stat-label">Treats:</span>
+            <span id="treats"></span>
+        </div>
     </header>
-    <main>
-        <section class="main-section">
-
+    <main> 
+        <h2 id="title"></h2>
+        <p>
+            <img id="image">
+        </p>
+        <p id="description"></p>
+        <form id="choice-form">
+            <p id="choices"></p>
+            <div class="button">
+                <button></button>Pick one!
+            </div>
+        </form>
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="../map">Back to Map</a>
         </section>
     </main>
     <footer>

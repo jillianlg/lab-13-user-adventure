@@ -1,7 +1,7 @@
 import adventures from '../data.js';
 import { getDog } from '../data/storage-utils.js';
 import isBad from '../general/is-bad.js';
-import loadProfile from '../general/profile.js';
+import loadProfile from '../general/load-profile.js';
 import createAdventureLink from './create-adventure-link.js';
 import { hasCompletedAllAdventures } from './all-completed.js';
 import checkCompleted from './check-completed.js';

@@ -79,3 +79,36 @@ footer {
     box-shadow: var(--shadow);
     background-image: url(/assets/paw-print-banner.png);
 }
+
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/paw-print.png);
+    border: none;
+    color: #50c24d;
+    height: 64px;
+    width: 64px;
+    transform: rotate(25deg);
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+button:hover {
+    transform: rotate(-25deg);
+    opacity: 0.75;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    font-size: 18px;
+    width: 200px;
+    height: 84px;
+    margin-top: 20px;
+}
