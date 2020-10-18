@@ -60,7 +60,7 @@ header {
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
-    background-image: url(./assets/paw-print-banner.png);
+    background-image: url(../assets/paw-print-banner.png);
     /* opacity: 0.70; */
 }
 
@@ -77,7 +77,7 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
-    background-image: url(./assets/paw-print-banner.png);
+    background-image: url(../assets/paw-print-banner.png);
 }
 
 
@@ -85,7 +85,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./assets/paw-print.png);
+    background-image: url(../assets/paw-print.png);
     border: none;
     color: #50c24d;
     height: 64px;
