@@ -1,10 +1,10 @@
 export default [
     {
         id: 'park',
-        title: 'To the Dog Park',
+        title: 'Dog Park',
         map: {
-            top:'89%',
-            left: '44%'
+            top:'88%',
+            left: '13%'
         },
         image: 'dog-park.jpg',
         desciption:`It's Saturday, and you know what that means! Your human finally turns off those boing shiny squares they've been staring at all week and take you to the best place on earth!! You arrive at the dog park, what do you do?`,
@@ -33,24 +33,24 @@ export default [
         id: 'groomer',
         title: 'Comb & Collar',
         map: {
-            top:'17%',
-            left: '37%'
+            top:'13%',
+            left: '60%'
         },
         image: 'dog-goomer.jpg',
-        desciption:`Your human grabs your leash and leads you to the car. Human, you forgot the ball for the Dog Park! Where are you going, you wonder?!?! Your human pulls up to a strange building and leads you inside. You notice the other dogs leaving have bows on and smell weird. When it dawns on you that you are at the groomers you?`,
+        desciption:`Your human grabs your leash and you head to the car. Human, you forgot the ball for the Dog Park! Where are you going, you wonder?!?! Your human pulls up to a strange building and leads you inside. You notice the other dogs leaving have bows on and smell weird. When it dawns on you that you are at the groomers you?`,
 
         choices: [{
             id: 'spa',
             description: 'Get excited!',
             results:`A day at the spa for some primping, pampering, and undivided attention is just what you need. Plus, know that you are in for some extra treats with those irresistible puppy dog eyes.`,
             baddog: 0,
-            treats: 0
+            treats: 7
         }, {
             id: 'sulk',
             description: 'Sulk and be difficult.',
             results:`This is the worst, but at least you get treats for putting up with this bull.`,
-            baddog: 1,
-            treats: 3
+            baddog: 2,
+            treats: 5
         }, {
             id: 'wet',
             description: 'Oh, hell, no!',
@@ -61,10 +61,10 @@ export default [
     },
     {
         id: 'vet',
-        title: 'Vet Vist',
+        title: 'Vet Hospital',
         map: {
-            top:'31%',
-            left: '5%'
+            top:'34%',
+            left: '29%'
         },
         image: 'dog-vet.png',
         desciption:`Another car ride! Wonder where to this time?!? You pass the dog park and head on to the road that makes the wind go fast. You head inside a big building, and your nose figures it out! Nothing good happens here. You desperately look at your human, hoping this was a mistake. When they sit, you know you are on your own to get out of this, so you?`,
@@ -91,7 +91,7 @@ export default [
     }
 ];
 
-// const adventures = [
+//  [
 //     park,
 //     groomer,
 //     vet

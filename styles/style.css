@@ -4,18 +4,31 @@
 
 body {
     --color1: #ffffff;
-    --color2: #ffffff;
-    --color3: #ffffff;
+    --color2: #5dc4e4;
+    --color3:  #50c24d;
     --color4: #ffffff;
     --color5: #ffffff;
     
-    --header-height: 80px;
+    --header-height: 70px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
-    --footer-height: 25px;
+    --footer-height: 70px;
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    /* background-image: url(/assets/paw-print-banner.png); */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+header, main {
+    padding: 8px;
 }
 
 main {
@@ -28,7 +41,7 @@ main {
 
 section {
     background-color: var(--color5);
-    width: 1000px;
+    width: 600px;
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -41,41 +54,21 @@ section {
     border: solid 2px var(--color1);
 }
 
-label {
-    display: block;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
-    /* justify-content: center;
-    align-items: center; */
-}
-
-button {
+header {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
-}
-/* header {
-    display: flex;
-    justify-content: flex-end;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
-} */
+    background-image: url(./assets/paw-print-banner.png);
+    /* opacity: 0.70; */
+}
 
-/* .gutter-right {
-    margin-right: 20px;
-} */
-
-/* header img {
-    height: var(--header-height);
-} */
-
-/* content {
+content {
     width: 80%;
-} */
+}
 
-/* footer {
+footer {
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -84,4 +77,38 @@ button {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
-} */
+    background-image: url(./assets/paw-print-banner.png);
+}
+
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/paw-print.png);
+    border: none;
+    color: #50c24d;
+    height: 64px;
+    width: 64px;
+    transform: rotate(25deg);
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+button:hover {
+    transform: rotate(-25deg);
+    opacity: 0.75;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    font-size: 18px;
+    width: 200px;
+    height: 84px;
+    margin-top: 20px;
+}
