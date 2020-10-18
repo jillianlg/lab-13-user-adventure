@@ -14,29 +14,51 @@
 
 <body>
     <header>
-        <div></div>
     </header>
     <main>
         <section class="main-section">
+            <h3>A Doggy Dog Adventure</h3>
+            <h2></h2>
             <form id="form">
-                <label>
-                    Dog name:
-                    <input name="name" placeholder="Yuki"/>
-                </label>
-                <label>
-                    Breed:
-                    <!-- <input type="radio" name="breed" value="shiba">Shiba</input>
-                    <input type="radio" name="breed" value="boxer">Boxer</input>
-                    <input type="radio" name="breed" value="poodle">Poodle</input>
-                    <input type="radio" name="breed" value="labrador">Labrador</input> -->
+                <p class="text-prompt">
+                    <label>Pick your name:<input name="name" placeholder="Yuki"/></label>
+                </p>
+                <fieldset>
+                    <legend>Pick your breed:</legend>
+                    <p id="avatars">
+                        <label>
+                            <input type="radio" name="breed" value="shiba">
+                            <img src="/assets/shiba.png" alt="Shiba Inu">
+                            Shiba
+                        </label>
+                        <label>
+                            <input type="radio" name="breed" value="boxer">
+                            <img src="/assets/boxer.png" alt="Boxer">
+                            Boxer
+                        </label>
+                        <label>
+                            <input type="radio" name="breed" value="poodle">
+                            <img src="/assets/poodle.png" alt="Poodle">
+                            Poodle
+                        </label>
+                        <label>
+                            <input type="radio" name="breed" value="labrador">
+                            <img src="/assets/labrador.png" alt="Labrador Retrevier">
+                            Labrador
+                        </label>
+                    </p>
+                </fieldset>
+                <!-- <label>
                     <select name="breed">
                         <option value="shiba">Shiba</option>
                         <option value="boxer">Boxer</option>
                         <option value="poodle">Poodle</option>
                         <option value="labrador">Labrador</option>
                     </select>
-                </label>
-            <button>Play!</button>
+                </label> -->
+            <div class="button">
+                <button></button>Play!
+            </div>
             </form>
         </section>
     </main>

@@ -24,7 +24,6 @@ form.addEventListener('submit', (e) => {
 });
 
 
-
 // const stringyDog = JSON.stringify(dog);
 
 // localStorage.setItem('dog', stringyDog);

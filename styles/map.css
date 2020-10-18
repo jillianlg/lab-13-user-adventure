@@ -1,87 +1,50 @@
-/* body, html {
-    margin: 0 auto;
-} */
-
-body {
-    --color1: #ffffff;
-    --color2: #ffffff;
-    --color3: #ffffff;
-    --color4: #ffffff;
-    --color5: #ffffff;
-    
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
-}
-
-main {
+header {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+header img {
+    transform: rotate(-40deg);
+    height: 40px;
+    /* margin-right: 20px; */
 }
 
-section {
-    background-color: var(--color5);
-    width: 1000px;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+header h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
 }
 
-label {
-    display: block;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
-    /* justify-content: center;
-    align-items: center; */
+h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    margin-top: 20px;
+    margin-left: 40px;
+    position: relative;
+}
+#adventure {
+    position: relative;
+    background-image: url("../assets/map.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: calc(90vw * 642 / 900);
+    margin: auto;
 }
 
-button {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
+.adventure {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
-/* header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
-} */
 
-/* .gutter-right {
-    margin-right: 20px;
-} */
+.adventure.completed {
+    color: whitesmoke;
+    font-size: .9em;
+}
 
-/* header img {
-    height: var(--header-height);
-} */
-
-/* content {
-    width: 80%;
-} */
-
-/* footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-} */
+.adventure.completed:after {
+    content: ' ✔';
+}
