@@ -1,6 +1,6 @@
-import adventures from '../data.js';
-import { getDog, saveDog } from '../storage-utils.js';
-import { findById } from '../utils.js';
+import adventures from '../data/data.js';
+import { getDog, saveDog } from '../data/storage-utils.js';
+import { findById } from '../general/find-by-id.js';
 import loadProfile from '../general/load-profile.js';
 import scoreAdventure from './score-adventure.js';
 import createChoice from './create-choice.js';
@@ -12,9 +12,9 @@ loadProfile();
 const searchParams = new URLSearchParams(window.location.search);
 
 // get the adventure id from the URL
-const id = searchParams.get('id');
+const adventureId = searchParams.get('id');
 // go use old faithful to find our adventure
-const adventure = findById(adventures, id);
+const adventure = findById(adventures, adventureId);
 
 // if there's no such adventure return to the map
 if (!adventure) {
@@ -32,7 +32,7 @@ const resultDescription = document.getElementById('result-description');
 
 // use the adventure that we found in the data array to update the dom
 title.textContent = adventure.title;
-image.src = '../assets/adventures/' + adventure.image;
+image.src = '../assets/' + adventure.image;
 // where the audio file would go if I were using audio
 description.textContent = adventure.description;
 

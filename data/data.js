@@ -37,20 +37,20 @@ export default [
             left: '60%'
         },
         image: 'dog-goomer.jpg',
-        desciption:`Your human grabs your leash and leads you to the car. Human, you forgot the ball for the Dog Park! Where are you going, you wonder?!?! Your human pulls up to a strange building and leads you inside. You notice the other dogs leaving have bows on and smell weird. When it dawns on you that you are at the groomers you?`,
+        desciption:`Your human grabs your leash and you head to the car. Human, you forgot the ball for the Dog Park! Where are you going, you wonder?!?! Your human pulls up to a strange building and leads you inside. You notice the other dogs leaving have bows on and smell weird. When it dawns on you that you are at the groomers you?`,
 
         choices: [{
             id: 'spa',
             description: 'Get excited!',
             results:`A day at the spa for some primping, pampering, and undivided attention is just what you need. Plus, know that you are in for some extra treats with those irresistible puppy dog eyes.`,
             baddog: 0,
-            treats: 0
+            treats: 7
         }, {
             id: 'sulk',
             description: 'Sulk and be difficult.',
             results:`This is the worst, but at least you get treats for putting up with this bull.`,
-            baddog: 1,
-            treats: 3
+            baddog: 2,
+            treats: 5
         }, {
             id: 'wet',
             description: 'Oh, hell, no!',

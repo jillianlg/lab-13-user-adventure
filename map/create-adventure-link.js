@@ -4,10 +4,6 @@ function createAdventureLink(adventure) {
     const link = document.createElement('a');
     link.classList.add('adventure');
 
-    // const searchParams = new URLSearchParams();
-    // searchParams.set('id', adventure.id);
-    // link.href = 'quest?' + searchParams.toString();
-
     // link.href = '../adventures/?id=' + adventure.id;
     link.href = `../adventures/?id=${adventure.id}`;
 
