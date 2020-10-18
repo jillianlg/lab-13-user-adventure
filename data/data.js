@@ -7,7 +7,7 @@ export default [
             left: '13%'
         },
         image: 'dog-park.jpg',
-        desciption:`It's Saturday, and you know what that means! Your human finally turns off those boing shiny squares they've been staring at all week and take you to the best place on earth!! You arrive at the dog park, what do you do?`,
+        description:`It's Saturday, and you know what that means! Your human finally turns off those boing shiny squares they've been staring at all week and take you to the best place on earth!! You arrive at the dog park, what do you do?`,
 
         choices: [{
             id: 'dig',
@@ -37,7 +37,7 @@ export default [
             left: '60%'
         },
         image: 'dog-goomer.jpg',
-        desciption:`Your human grabs your leash and you head to the car. Human, you forgot the ball for the Dog Park! Where are you going, you wonder?!?! Your human pulls up to a strange building and leads you inside. You notice the other dogs leaving have bows on and smell weird. When it dawns on you that you are at the groomers you?`,
+        description:`Your human grabs your leash and you head to the car. Human, you forgot the ball for the Dog Park! Where are you going, you wonder?!?! Your human pulls up to a strange building and leads you inside. You notice the other dogs leaving have bows on and smell weird. When it dawns on you that you are at the groomers you?`,
 
         choices: [{
             id: 'spa',
@@ -67,17 +67,17 @@ export default [
             left: '29%'
         },
         image: 'dog-vet.png',
-        desciption:`Another car ride! Wonder where to this time?!? You pass the dog park and head on to the road that makes the wind go fast. You head inside a big building, and your nose figures it out! Nothing good happens here. You desperately look at your human, hoping this was a mistake. When they sit, you know you are on your own to get out of this, so you?`,
+        description:`Another car ride! Wonder where to this time?!? You pass the dog park and head on to the road that makes the wind go fast. You arrive at a big building, and your nose figures it out as your human opens the door. Oh No! Nothing good happens here. You desperately look at your human, hoping this was a mistake. When they sit, you know you are on your own to get out of this, so you?`,
 
         choices: [{
             id: 'hide',
-            description: 'If I can\'t see you, you can\'t see me.',
-            results:`If I can't see you, you can't see me. Looking around, you try to find a place to hide. You manage to squeeze under a coffee table, and it takes 35 minutes, several treats, and finally removing the coffee table to you out.`,
+            description: 'Hide',
+            results:`If I can't see you, you can't see me, right?! Looking around, you try to find a place to hide. You manage to squeeze under a coffee table, and it takes 35 minutes, several treats, and finally removing the coffee table to you out.`,
             baddog: 7,
             treats: 5
         }, {
             id: 'bite',
-            description: 'Self-defense!',
+            description: 'Self-defense',
             results:`It is only fair, right? If the Vet stabs you, then you get to bite them.`,
             baddog: 10,
             treats: 0

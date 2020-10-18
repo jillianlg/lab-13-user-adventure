@@ -24,7 +24,7 @@ function loadProfile() {
 
     // if they're bad, say so in the header
     if (isBad(dog)) {
-        baddog.textContent = 'BAD DOG!!!';
+        baddog.textContent = 'BAD DOG!';
     }
     else {
         // otherwise show the bad dog status
