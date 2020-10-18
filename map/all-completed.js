@@ -1,8 +1,8 @@
-export function hasCompletedAllAdventures(_dog, adventures) {
+export function hasCompletedAllAdventures(adventures, _dog) {
     for (let i = 0; i < adventures.length; i++) {
-        const quest = quest[i];
+        const adventure = adventures[i];
 
-        if (!_dog.completed[adventures.id]) {
+        if (!_dog.completed[adventure.id]) {
             return false;
         }
     }

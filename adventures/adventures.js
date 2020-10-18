@@ -48,17 +48,17 @@ for (let index = 0; index < adventure.choices.length; index++) {
 choiceForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // get user choice
+    // get dog choice
     const formData = new FormData(choiceForm);
     const choiceId = formData.get('choice');
     // use find by id search the data array for the choice
     const choice = findById(adventure.choices, choiceId); 
 
-    // get user out of local storage
+    // get dog out of local storage
     const dog = getDog();
-    // generate a score and manipulate user state
+    // generate a score and manipulate dog state
     scoreAdventure(choice, adventure.id, dog);
-    // save user
+    // save dog
     saveDog(dog);
 
      // update UI

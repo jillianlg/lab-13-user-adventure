@@ -1,5 +1,5 @@
 function isBad(dog) {
-    return dog.baddog <= 0;
+    return dog.baddog >= 30;
 }
 
 export default isBad;

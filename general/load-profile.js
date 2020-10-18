@@ -8,12 +8,12 @@ function loadProfile() {
     const baddog = document.getElementById('bad-dog');
     const treats = document.getElementById('treats');
 
-    /* initialize: load and parse json with user from local storage */
+    /* initialize: load and parse json with dog from local storage */
     const dog = getDog();
 
-    // if there's no user
+    // if there's no dog
     if (!dog) {
-        // no user? go back to sign up:
+        // no dog? go back to sign up:
         window.location = './';
     }
 

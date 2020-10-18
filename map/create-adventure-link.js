@@ -1,15 +1,19 @@
 
 
-function createAdventureLink(quest) {
-    const span = document.createElement('span');
-    span.classList.add('adventure');
-    span.classList.add('completed');
+function createAdventureLink(adventure) {
+    const link = document.createElement('a');
+    link.classList.add('adventure');
 
-    span.style.top = quest.map.top;
-    span.style.left = quest.map.left;
+    // const searchParams = new URLSearchParams();
+    // searchParams.set('id', adventure.id);
+    // link.href = 'adventure?' + searchParams.toString();
+    link.href = '../adventure/?id=' + adventure.id;
 
-    span.textContent = quest.title;
-    return span;
+    link.style.top = adventure.map.top;
+    link.style.left = adventure.map.left;
+    link.textContent = adventure.title;
+
+    return link;
 }
 
 export default createAdventureLink;

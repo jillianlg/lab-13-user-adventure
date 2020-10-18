@@ -1,4 +1,4 @@
-import adventures from '../data.js';
+import adventures from '../data/data.js';
 import { getDog } from '../data/storage-utils.js';
 import isBad from '../general/is-bad.js';
 import loadProfile from '../general/load-profile.js';
@@ -9,28 +9,28 @@ import checkCompleted from './check-completed.js';
 // load the header on every page but the home page
 loadProfile();
 
-// go grab the user from localStorage
+// go grab the dog from localStorage
 const dog = getDog();
 
-// if they're dead, or if they've completed all the quests
+// if they're dead, or if they've completed all the adventure
 if (isBad(dog) || hasCompletedAllAdventures(adventures, dog)) {
     // send them to the results page
     window.location = '../results';
 }
 
-const nav = document.getElementById('adventures');
+const nav = document.getElementById('adventure');
 
 for (let i = 0; i < adventures.length; i++) {
-    // for every quest
+    // for every adventure
     const adventure = adventures[i];
     let adventureDisplay = null;
 
-    // if the user has completed it
+    // if the dog has completed it
     if (dog.completed[adventure.id]) {
         // make a completed adventure display (with a checkmark)
         adventureDisplay = checkCompleted(adventure);
     } else {
-        // otherwiese, make a link to the quest
+        // otherwiese, make a link to the adventure
         adventureDisplay = createAdventureLink(adventure);
     }
     nav.appendChild(adventureDisplay);
