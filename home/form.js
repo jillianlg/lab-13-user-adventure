@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { saveDog } from './storage-utils.js';
+import { saveDog } from '../data/storage-utils.js';
 
 const form = document.getElementById('form');
 // initialize state
@@ -22,8 +22,3 @@ form.addEventListener('submit', (e) => {
     window.location.href = './map/';
 
 });
-
-
-// const stringyDog = JSON.stringify(dog);
-
-// localStorage.setItem('dog', stringyDog);
