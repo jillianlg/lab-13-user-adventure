@@ -87,7 +87,6 @@ button {
     justify-content: center;
     background-image: url(../assets/paw-print.png);
     border: none;
-    color: #50c24d;
     height: 64px;
     width: 64px;
     transform: rotate(25deg);
