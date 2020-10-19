@@ -15,7 +15,8 @@ const dog = getDog();
 // if they're dead, or if they've completed all the adventure
 if (isBad(dog) || hasCompletedAllAdventures(adventures, dog)) {
     // send them to the results page
-    window.location = '../results';
+    // window.location = '../results';
+    window.location = '../results/results.html';
 }
 
 const nav = document.getElementById('adventure');
