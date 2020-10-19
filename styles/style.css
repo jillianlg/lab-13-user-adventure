@@ -5,7 +5,7 @@
 body {
     --color1: #ffffff;
     --color2: #5dc4e4;
-    --color3:  #50c24d;
+    --color3: #ffffff;
     --color4: #ffffff;
     --color5: #ffffff;
     
@@ -23,9 +23,9 @@ body {
     box-sizing: border-box;
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 header, main {
     padding: 8px;

@@ -1,4 +1,4 @@
-import loadProfile from '../common/load-profile.js';
+import loadProfile from '../general/load-profile.js';
 import { getDog } from '../data/storage-utils.js';
 import scoreBaddog from './score-baddog.js';
 import scoreTreats from './score-treats.js';
@@ -26,7 +26,8 @@ else {
 const treatMessages = treatsMessages[treatsResult];
 
 let story = 'You, ';
-story += dog.name + ' the ' + dog.race + ', had a very adventurious day. ';
+story += dog.name + ' the ' + dog.breed + ', had a very adventurious day. ';
 story += baddogMessage + ' and ' + treatMessages + '.';
 
 storyDisplay.textContent = story;
+console.log(story);

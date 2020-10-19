@@ -7,7 +7,7 @@ export default [
             left: '13%'
         },
         image: 'dog-park.jpg',
-        description:`It's Saturday, and you know what that means! Your human finally turns off those boing shiny squares they've been staring at all week and take you to the best place on earth!! You arrive at the dog park, what do you do?`,
+        description:`It's Saturday, and you know what that means! Your human finally turns off those boring shiny squares they stare at all week and take you to the best place on earth!! You arrive at the dog park, what do you do?`,
 
         choices: [{
             id: 'dig',
@@ -23,7 +23,7 @@ export default [
             treats: 0
         }, {
             id: 'ball',
-            description: 'Play Ball',
+            description: 'Play Ball.',
             results:`Best day ever!! Your human brought the ball. You run hard and go home tired. After a long nap, you get a bully stick for being such a good dog!`,
             baddog: 0,
             treats: 10
@@ -36,8 +36,8 @@ export default [
             top:'13%',
             left: '60%'
         },
-        image: 'dog-goomer.jpg',
-        description:`Your human grabs your leash and you head to the car. Human, you forgot the ball for the Dog Park! Where are you going, you wonder?!?! Your human pulls up to a strange building and leads you inside. You notice the other dogs leaving have bows on and smell weird. When it dawns on you that you are at the groomers you?`,
+        image: 'dog-groomer.png',
+        description:`Your human grabs your leash and you head to the car. Human, you forgot our the ball? Where are we going, you wonder?!?! Your human leads you inside a strange building and you notice the other dogs leaving smell weird. Suddenly it dawns on you that your human is leaving you here. What do you do?`,
 
         choices: [{
             id: 'spa',
@@ -71,13 +71,13 @@ export default [
 
         choices: [{
             id: 'hide',
-            description: 'Hide',
+            description: 'Hide.',
             results:`If I can't see you, you can't see me, right?! Looking around, you try to find a place to hide. You manage to squeeze under a coffee table, and it takes 35 minutes, several treats, and finally removing the coffee table to you out.`,
             baddog: 7,
             treats: 5
         }, {
             id: 'bite',
-            description: 'Self-defense',
+            description: 'Self-defense.',
             results:`It is only fair, right? If the Vet stabs you, then you get to bite them.`,
             baddog: 10,
             treats: 0

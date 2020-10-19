@@ -42,6 +42,10 @@ p, #description {
     width: 550px;
 }
 
+.hidden {
+    display: none;
+}
+
 .choice {
     display: inline;
     list-style: none;
