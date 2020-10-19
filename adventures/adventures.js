@@ -18,7 +18,8 @@ const adventure = findById(adventures, adventureId);
 
 // if there's no such adventure return to the map
 if (!adventure) {
-    window.location = '../map';
+    // window.location = '../map';
+    window.location = '../map/index.html';
 }
 
 const title = document.getElementById('title');
