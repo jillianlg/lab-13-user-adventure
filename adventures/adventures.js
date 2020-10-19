@@ -65,7 +65,7 @@ choiceForm.addEventListener('submit', function(event) {
     // audio.src = '../assets/audio-file/' + adventure.action;
     choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
-    resultDescription.textContent = choice.result;
+    resultDescription.textContent = choice.results;
 
     // reload profile for new stats
     loadProfile();
