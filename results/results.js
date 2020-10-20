@@ -30,4 +30,3 @@ story += dog.name + ' the ' + dog.breed + ', had a very adventurious day. ';
 story += baddogMessage + ' and ' + treatMessages + '.';
 
 storyDisplay.textContent = story;
-console.log(story);

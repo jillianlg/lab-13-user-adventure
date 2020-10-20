@@ -16,7 +16,7 @@ const dog = getDog();
 if (isBad(dog) || hasCompletedAllAdventures(adventures, dog)) {
     // send them to the results page
     // window.location = '../results';
-    window.location = '../results/results.html';
+    window.location = './results/results.html';
 }
 
 const nav = document.getElementById('adventure');
