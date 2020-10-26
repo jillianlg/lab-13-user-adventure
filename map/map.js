@@ -34,6 +34,7 @@ for (let i = 0; i < adventures.length; i++) {
         // otherwiese, make a link to the adventure
         adventureDisplay = createAdventureLink(adventure);
     }
+    console.log(adventureDisplay);
     nav.appendChild(adventureDisplay);
 }
 // const ul = document.querySelector('ul');
