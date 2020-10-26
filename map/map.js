@@ -16,7 +16,7 @@ const dog = getDog();
 if (isBad(dog) || hasCompletedAllAdventures(adventures, dog)) {
     // send them to the results page
     // window.location = '../results';
-    window.location = './results/results.html';
+    window.location = '../results/index.html';
 }
 
 const nav = document.getElementById('adventure');
@@ -34,14 +34,13 @@ for (let i = 0; i < adventures.length; i++) {
         // otherwiese, make a link to the adventure
         adventureDisplay = createAdventureLink(adventure);
     }
-    console.log(adventureDisplay);
     nav.appendChild(adventureDisplay);
 }
 // const ul = document.querySelector('ul');
 
 adventures.forEach(adventure => {
     // const li = document.createElement('li');
-    // const link = document.createElement('a');
+    const link = document.createElement('a');
 
     // li.appendChild(link);
 
