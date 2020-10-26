@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { saveDog } from '../data/storage-utils.js';
+import { saveDog } from './data/storage-utils.js';
 
 const form = document.getElementById('form');
 // initialize state
